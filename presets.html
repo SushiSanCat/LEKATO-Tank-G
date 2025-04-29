@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEKATO Tank G - Presets Library</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header class="fade-in">
+        <div class="logo" aria-label="LEKATO Logo">LG</div>
+        <h1 class="gradient-text">LEKATO Tank G MultiFX Pedal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="presets.html" class="active">Presets Library</a></li>
+                <li><a href="ir-cabinets.html">IR Cabinets Library</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fade-in delay-1">
+            <h2 class="gradient-text">Preset Collections</h2>
+            <input type="text" id="presetSearch" placeholder="Search presets..." style="width:100%;margin-bottom:1rem;padding:0.5rem;font-size:1rem;border-radius:4px;border:1px solid #23272b;">
+
+
+            <h3 class="gradient-text">Root Presets</h3>
+            <ul class="preset-list" id="presetList">
+                <li class="scale-in delay-1"><strong>JL-80_s Clean:</strong> Sparkling clean tone with subtle compression, perfect for funk and pop rhythm playing</li>
+                <li class="scale-in delay-2"><strong>JL-80_s Lead:</strong> Smooth, singing lead tone with medium gain and subtle delay</li>
+                <li class="scale-in delay-3"><strong>JL-80_s Riff:</strong> Punchy mid-range tone ideal for rock rhythm playing</li>
+                <li class="scale-in delay-4"><strong>JL-Ambient:</strong> Ethereal soundscape with lush reverb and modulated delays</li>
+                <li class="scale-in delay-5"><strong>JL-Clean:</strong> Pure, uncolored clean tone with studio-quality transparency</li>
+                <li class="scale-in delay-1"><strong>JL-Ford Clean:</strong> Warm, vintage-inspired clean with tube-like response</li>
+                <li class="scale-in delay-2"><strong>JL-Ford Lead:</strong> Classic rock lead tone with singing sustain</li>
+                <li class="scale-in delay-3"><strong>JL-Ford Riff:</strong> Crunchy rhythm tone with tight low-end response</li>
+                <li class="scale-in delay-4"><strong>JL-Ford Tremolo:</strong> Clean tone with vintage tremolo effect</li>
+                <li class="scale-in delay-5"><strong>JL-Hot Lead:</strong> High-gain lead tone with boosted mids for cutting through mixes</li>
+                <li class="scale-in delay-1"><strong>JL-Hot Riff:</strong> Aggressive rhythm tone with tight palm-muted response</li>
+                <li class="scale-in delay-2"><strong>JL-Space Clean:</strong> Clean tone with expansive stereo imaging</li>
+                <li class="scale-in delay-3"><strong>JL-Space Lead:</strong> Lead tone with atmospheric delay and reverb</li>
+                <li class="scale-in delay-4"><strong>JL-Space Riff:</strong> Rhythm tone with subtle modulation effects</li>
+                <li class="scale-in delay-5"><strong>JL-Trem Clean:</strong> Crystal clear clean tone with optical tremolo</li>
+            </ul>
+
+            <h3 class="gradient-text">Rock Pack</h3>
+            <ul class="preset-list">
+                <li><strong>JL-Rock Riff:</strong> Classic rock crunch with dynamic response</li>
+                <li><strong>JL-Rock Clean:</strong> Bright, jangly clean tone for rock rhythm</li>
+                <li><strong>JL-Rock Lead:</strong> Singing lead tone with vintage delay</li>
+                <li><strong>JL-Rock Riff Echo:</strong> Crunchy rhythm with slapback echo</li>
+            </ul>
+
+            <h3 class="gradient-text">Pop Pack</h3>
+            <ul class="preset-list">
+                <li><strong>JL-Pop Riff:</strong> Tight, compressed rhythm tone for pop productions</li>
+                <li><strong>JL-Pop Ambient:</strong> Dreamy atmospheric textures for pop ballads</li>
+                <li><strong>JL-Pop Clean:</strong> Ultra-clean tone with studio compression</li>
+                <li><strong>JL-Pop Lead:</strong> Smooth lead tone with chorus effect</li>
+            </ul>
+
+            <h3 class="gradient-text">Metal Pack</h3>
+            <ul class="preset-list">
+                <li><strong>JL-Metal Clean:</strong> Tight, focused clean tone for metal ballads</li>
+                <li><strong>JL-Metal Lead:</strong> Screaming high-gain lead with noise gate</li>
+                <li><strong>JL-Metal Riff Echo:</strong> Brutal rhythm tone with delay for dramatic effect</li>
+                <li><strong>JL-Metal Riff:</strong> Ultra-tight palm-muted rhythm tone</li>
+            </ul>
+
+            <h3 class="gradient-text">Dumble Pack</h3>
+            <ul class="preset-list">
+                <li><strong>JL-Dumble Clean Chord:</strong> Warm, rich clean tone for jazz chords</li>
+                <li><strong>JL-Dumble Clean Lead:</strong> Smooth transition from clean to slight breakup</li>
+                <li><strong>JL-Dumble Lead:</strong> Liquid lead tone with singing sustain</li>
+                <li><strong>JL-Dumble Riff:</strong> Dynamic blues-rock rhythm tone</li>
+            </ul>
+
+            <h3 class="gradient-text">80's Pack</h3>
+            <ul class="preset-list">
+                <li><strong>JL-80's Ambient:</strong> Atmospheric textures with digital delay</li>
+                <li><strong>JL-80's Clean:</strong> Bright, chorused clean tone</li>
+                <li><strong>JL-80's Lead:</strong> High-gain lead with harmonically rich sustain</li>
+                <li><strong>JL-80's:</strong> Classic 80s rock tone with chorus and delay</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+    document.getElementById('presetSearch').addEventListener('input', function() {
+        const filter = this.value.toLowerCase();
+        document.querySelectorAll('#presetList li').forEach(function(item) {
+            item.style.display = item.textContent.toLowerCase().includes(filter) ? '' : 'none';
+        });
+    });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 LEKATO. All rights reserved.</p>
+    </footer>
+</body>
+</html>

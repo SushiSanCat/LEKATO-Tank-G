@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEKATO Tank G - IR Cabs Library</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header class="fade-in">
+        <div class="logo" aria-label="LEKATO Logo">LG</div>
+        <h1 class="gradient-text">LEKATO Tank G MultiFX Pedal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="presets.html">Presets Library</a></li>
+                <li><a href="ir-cabinets.html" class="active">IR Cabinets Library</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fade-in delay-1">
+            <h2 class="gradient-text">IR Cabinet Collections</h2>
+            <input type="text" id="cabinetSearch" placeholder="Search cabinets..." style="width:100%;margin-bottom:1rem;padding:0.5rem;font-size:1rem;border-radius:4px;border:1px solid #23272b;">
+            <h3 class="gradient-text">Premium Cabinet Models</h3>
+            <ul class="cabinet-list" id="cabinetList">
+                <li class="scale-in delay-1"><strong>Bogner Uber:</strong> Aggressive modern metal cabinet with tight low-end and cutting highs</li>
+                <li class="scale-in delay-2"><strong>Dimebag:</strong> High-gain cabinet modeled after Dimebag Darrell's signature tone</li>
+                <li class="scale-in delay-3"><strong>EVH 5150 III:</strong> Punchy, mid-focused cabinet perfect for modern rock and metal</li>
+                <li class="scale-in delay-4"><strong>Fender Twin:</strong> Clean, sparkling cabinet ideal for jazz and country</li>
+                <li class="scale-in delay-5"><strong>Fortin Mesa SM57 1:</strong> Tight, focused metal tone with studio-grade mic placement</li>
+                <li class="scale-in delay-1"><strong>Friedman 1:</strong> Vintage-modern hybrid with smooth highs and singing mids</li>
+                <li class="scale-in delay-2"><strong>Lonestar R121:</strong> Warm, balanced tone captured with a Royer R121 ribbon mic</li>
+                <li class="scale-in delay-3"><strong>Marshall 1960:</strong> Classic 4x12 cabinet with iconic British crunch</li>
+                <li class="scale-in delay-4"><strong>Marshall AVT 1:</strong> Versatile modern Marshall tone with enhanced clarity</li>
+                <li class="scale-in delay-5"><strong>Marshall Slash:</strong> Smooth, singing lead tones inspired by Slash's signature sound</li>
+                <li class="scale-in delay-1"><strong>Marshall V30:</strong> Aggressive midrange punch perfect for hard rock</li>
+                <li class="scale-in delay-2"><strong>Rectfier V30 SM57:</strong> Mesa Boogie Rectifier tone with tight low-end</li>
+                <li class="scale-in delay-3"><strong>Revv Generator:</strong> Ultra-modern high-gain cabinet with exceptional clarity</li>
+                <li class="scale-in delay-4"><strong>Roland JC120:</strong> Crystal clean solid-state cabinet for pristine cleans</li>
+                <li class="scale-in delay-5"><strong>Zilla 212 R121 2:</strong> Boutique British tone with rich harmonic complexity</li>
+            </ul>
+
+            <h3 class="gradient-text">Cabinet Characteristics</h3>
+            <ul class="cabinet-list">
+                <li><strong>Modern High-Gain:</strong> Bogner Uber, Dimebag, EVH 5150 III, Fortin Mesa, Revv Generator</li>
+                <li><strong>Vintage/British:</strong> Marshall 1960, Marshall Slash, Marshall V30, Zilla 212</li>
+                <li><strong>Clean/Specialty:</strong> Fender Twin, Roland JC120, Lonestar R121</li>
+                <li><strong>Hybrid/Versatile:</strong> Friedman 1, Marshall AVT 1, Rectfier V30 SM57</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+    document.getElementById('cabinetSearch').addEventListener('input', function() {
+        const filter = this.value.toLowerCase();
+        document.querySelectorAll('#cabinetList li').forEach(function(item) {
+            item.style.display = item.textContent.toLowerCase().includes(filter) ? '' : 'none';
+        });
+    });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 LEKATO. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+presets root:
+JL-80_s Clean
+JL-80_s Lead
+JL-80_s Riff
+JL-Ambient
+JL-Clean
+JL-Ford Clean
+JL-Ford Lead
+JL-Ford Riff
+JL-Ford Tremolo
+JL-Hot Lead
+JL-Hot Riff
+JL-Space Clean
+JL-Space Lead
+JL-Space Riff
+JL-Trem Clean
+
+rock pack:
+JL-Rock Riff
+JL-Rock Clean
+JL-Rock Lead
+JL-Rock Riff Echo
+
+pop pack:
+JL-Pop Riff
+JL-Pop Ambient
+JL-Pop Clean
+JL-Pop Lead
+
+metal pack:
+JL-Metal Clean
+JL-Metal Lead
+JL-Metal Riff Echo
+JL-Metal Riff
+
+dumble pack:
+JL-Dumble Clean Chord
+JL-Dumble Clean Lead
+JL-Dumble Lead
+JL-Dumble Riff
+
+80's pack:
+JL-80_s Ambient
+JL-80_s Clean
+JL-80_s Lead
+JL-80
